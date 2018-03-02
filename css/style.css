@@ -30,6 +30,9 @@ html, body {
 
 /* Semantic elements */
 header {
+	display: sticky;
+	top: 0;
+	
 	padding: 2rem;
 	border-bottom: solid 1px black;
 	
@@ -37,6 +40,18 @@ header {
 	
 	color: #ffffff;
 	background-color: #2f2f2f;
+}
+
+header nav {
+	text-align: right;
+}
+
+header ul, header li {
+	display: inline;
+}
+
+header li {
+	list-style-type: none;
 }
 
 article {
@@ -51,6 +66,31 @@ footer {
 	font-size: 10px;
 	font-style: italic;
 	text-align: center;
+}
+
+/* Links */
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header nav a:link {
+	color: #dfdfdf;
+}
+
+header nav a:visited {
+	color: #bfbfbf;
+}
+
+header nav a:hover {
+	color: #dfdfff;
 }
 
 /* Normal formatting things */
