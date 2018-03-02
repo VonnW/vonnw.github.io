@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
 	margin: 0;
 	border: 0;
@@ -12,21 +13,35 @@
 	box-sizing: inherit;
 }
 
+/* HTML and Body elements */
 html, body {
 	width: 100%;
 	
 	background-color: #dfdfdf;
 }
 
+/* Container */
 .container {
 	margin: 0 auto;
 	padding: 1rem;
 	
 	max-width: 64rem;
+
+/* Semantic elements */
+header {
+	padding: 2rem;
+	border-bottom: solid 1px black;
 	
+	width: 100%;
+	
+	background-color: #2f2f2f;
+}
+
+article {
 	background-color: #ffffff;
 }
 
+/* Normal formatting things */
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway", sans-serif;
 }

@@ -8,8 +8,23 @@
 		<link rel="stylesheet" href="/css/style.css" />
 	</head>
 	<body>
+		<header>
+			<div class="container">
+				<h1>Vonn Wheatley</h1>
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 		<div class="container">
-			{{ content }}
+			<article>
+				{{ content }}
+			</article>
+			<footer>
+				{% include footer.html %}
+			</footer>
 		</div>
 	</body>
 </html>
