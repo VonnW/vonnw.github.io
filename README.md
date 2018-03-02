@@ -1,2 +1,5 @@
 # vonnw.github.io
-This is my site.
+A ~really good~ site, made by me.
+
+# Credits
+* Me - Made the HTML and CSS

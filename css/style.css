@@ -53,7 +53,7 @@ header {
 	background-color: #2f2f2f;
 }
 
-header > * {
+header * {
 	line-height: 2rem;
 	
 	height: 2rem;
