@@ -4,10 +4,18 @@
 	padding: 0;
 	
 	box-sizing: border-box;
+	
+	font-family: "Open Sans", sans-serif;
 }
 
 *::before, *::after {
 	box-sizing: inherit;
+}
+
+html, body {
+	width: 100%;
+	
+	background-color: #dfdfdf;
 }
 
 .container {
@@ -15,4 +23,14 @@
 	padding: 1rem;
 	
 	max-width: 64rem;
+	
+	background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+p {
+	text-indent: 1em;
 }
