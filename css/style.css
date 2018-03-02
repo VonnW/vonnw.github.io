@@ -55,8 +55,6 @@ header {
 
 header * {
 	line-height: 2rem;
-	
-	height: 2rem;
 }
 
 header h1 {
@@ -65,6 +63,8 @@ header h1 {
 
 header nav {
 	float: right;
+	
+	height: 2em;
 }
 
 header ul, header li {
@@ -95,14 +95,18 @@ footer {
 
 /* Links */
 a:link {
+	color: #1f1f7f;
+	
 	text-decoration: none;
 }
 
 a:visited {
-	
+	color: #3f1f7f;
 }
 
 a:hover {
+	color: #1f1faf;
+	
 	text-decoration: underline;
 }
 
