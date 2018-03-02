@@ -53,8 +53,10 @@ header {
 	background-color: #2f2f2f;
 }
 
-header * {
+header > * {
 	line-height: 2rem;
+	
+	height: 2rem;
 }
 
 header h1 {
@@ -63,20 +65,18 @@ header h1 {
 
 header nav {
 	float: right;
-	
-	height: 2em;
 }
 
 header ul, header li {
 	display: inline;
 	
 	vertical-align: middle;
+	
+	list-style-type: none;
 }
 
 header li:not(:last-child) {
 	margin-right: .5em;
-	
-	list-style-type: none;
 }
 
 article {
