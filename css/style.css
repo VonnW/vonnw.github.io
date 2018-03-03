@@ -89,7 +89,7 @@ header ul, header li {
 }
 
 header li:not(:last-child)::after {
-	content: " \2022 ";
+	content: " \2022  ";
 }
 
 /* Links */
