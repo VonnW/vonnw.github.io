@@ -162,10 +162,12 @@ li {
 
 blockquote {
 	border-left: solid 2px #7f7f7f;
+	padding-left: 1em;
 	
 	color: #7f7f7f;
 	
 	font-style: italic;
+	text-indent: 0;
 }
 
 pre {
