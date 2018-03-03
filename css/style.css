@@ -139,9 +139,12 @@ p {
 	text-indent: 1em;
 }
 
+ul, ol {
+	margin-bottom: 1rem;
+}
+
 ul, ol, li {
 	margin-left: .5rem;
-	margin-bottom: 1rem;
 	
 	list-style-position: inside;
 }
