@@ -86,7 +86,7 @@ footer {
 header ul, header li {
 	display: inline;
 	
-	padding-left: 0;
+	margin-left: 0;
 	
 	vertical-align: middle;
 	
