@@ -1,5 +1,14 @@
 window.addEventListener("DOMContentLoaded", function() {
 	clean(document.body);
+	
+	document.getElementById("switchnav").addEventListener("click", function() {
+		var bignav = document.getElementById("bignav");
+		if (bignav.className.test(/shownav/i)) {
+			bignav.className = "";
+		} else {
+			bignav.className = "shownav";
+		}
+	});
 });
 
 // From sitepoint.com/removing-useless-nodes-from-the-dom/

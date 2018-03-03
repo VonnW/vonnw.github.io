@@ -170,4 +170,31 @@ blockquote {
 
 pre {
 	padding: .5rem;
+	
+	overflow-x: auto;
+}
+
+/* BigNav styles */
+#smallnav {
+	display: none;
+}
+
+#bignav {
+	display: initial;
+}
+
+
+/* Media styles */
+@media (max-width: 24rem) {
+	#smallnav {
+		display: initial;
+	}
+	
+	#bignav {
+		display: none;
+	}
+	
+	#bignav.shownav {
+		display: initial;
+	}
 }
