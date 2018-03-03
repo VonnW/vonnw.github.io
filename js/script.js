@@ -10,8 +10,6 @@ function clean(node) {
 		var child = node.childNodes[n];
 		
 		if (child.nodeType === 8 || (child.nodeType === 3 && !/\S/.test(child.nodeValue))) {
-			console.log("Deleted node!");
-			console.log(child);
 			node.removeChild(child);
 			n--;
 		} else if (child.nodeType === 1 && !/pre|code/i.test(child.tagName)) {
