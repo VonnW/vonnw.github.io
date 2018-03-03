@@ -167,6 +167,9 @@ blockquote {
 	color: #7f7f7f;
 	
 	font-style: italic;
+}
+
+blockquote p {
 	text-indent: 0;
 }
 
@@ -190,10 +193,15 @@ pre {
 @media (max-width: 24rem) {
 	#smallnav {
 		display: initial;
+		
+		float: right;
 	}
 	
 	#bignav {
 		display: none;
+		
+		float: none;
+		clear: both;
 	}
 	
 	#bignav.shownav {

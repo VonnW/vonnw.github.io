@@ -4,9 +4,9 @@ window.addEventListener("DOMContentLoaded", function() {
 	document.getElementById("switchnav").addEventListener("click", function() {
 		var bignav = document.getElementById("bignav");
 		if (/shownav/i.test(bignav.className)) {
-			bignav.className = "";
+			bignav.className = /shownav/i.replace(bignav.className, "");
 		} else {
-			bignav.className = "shownav";
+			bignav.className = bignav.className + "shownav";
 		}
 	});
 });
