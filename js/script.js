@@ -1,4 +1,4 @@
-document.addEventListener("load", function() {
+window.addEventListener("DOMContentLoaded", function() {
 	clean(document.getElementsByTagName("header")[0]);
 });
 
