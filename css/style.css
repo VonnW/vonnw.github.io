@@ -162,3 +162,7 @@ blockquote {
 	
 	font-style: italic;
 }
+
+pre {
+	padding: .5rem;
+}

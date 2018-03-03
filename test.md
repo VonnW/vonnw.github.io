@@ -16,12 +16,12 @@ This is a markdown file instead of an HTML file. If you look at the source code,
 ``` javascript
 function testFunc() {
 	alert("Hey, it's syntax highlighting!");
-	
 	return true;
 }
 ```
 
 > You should always believe everything you read on the internet.
+>
 > &mdash; Abraham Lincoln
 
 ## Scroll down!
