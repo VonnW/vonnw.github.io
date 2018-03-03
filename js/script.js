@@ -12,7 +12,7 @@ function clean(node) {
 		if (child.nodeType === 8 || (child.nodeType === 3 && !/\S/.test(child.nodeValue))) {
 			node.removeChild(child);
 			n--;
-		} else if (child.nodeType === 1 && !/pre|code/i.test(child.tagName)) {
+		} else if (child.nodeType === 1 && !/pre|code|blockquote/i.test(child.tagName)) {
 			clean(child);
 		}
 	}

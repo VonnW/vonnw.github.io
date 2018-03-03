@@ -21,7 +21,6 @@ function testFunc() {
 ```
 
 > You should always believe everything you read on the internet.
->
 > &mdash; Abraham Lincoln
 
 ## Scroll down!
