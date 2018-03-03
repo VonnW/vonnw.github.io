@@ -128,15 +128,19 @@ header nav a:hover {
 
 /* Normal formatting things */
 h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+	
 	font-family: "Raleway", sans-serif;
 }
 
 p {
+	margin-bottom: 1rem;
+	
 	text-indent: 1em;
 }
 
 ul, ol, li {
-	padding-left: .5em;
+	margin-left: .5rem;
 	
 	list-style-position: inside;
 }
