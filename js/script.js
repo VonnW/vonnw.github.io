@@ -1,6 +1,6 @@
 document.addEventListener("load", function() {
 	clean(document.getElementsByTagName("header")[0]);
-}
+});
 
 // From sitepoint.com/removing-useless-nodes-from-the-dom/
 // I just fixed their awful formatting
