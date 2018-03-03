@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
-	clean(document.body);
+	//clean(document.body);
 });
 
 // From sitepoint.com/removing-useless-nodes-from-the-dom/
