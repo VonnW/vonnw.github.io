@@ -13,6 +13,17 @@ This is a markdown file instead of an HTML file. If you look at the source code,
 2. This is list item number 2!
 3. This is list item number 3!
 
+``` javascript
+function testFunc() {
+	alert("Hey, it's syntax highlighting!");
+	
+	return true;
+}
+```
+
+> You should always believe everything you read on the internet.
+> - Abraham Lincoln
+
 ## Scroll down!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt luctus gravida. Nulla vel justo elementum, posuere ex a, vehicula erat. Sed condimentum commodo mauris sit amet eleifend. Praesent sed justo fringilla, pulvinar quam a, varius arcu. Vestibulum fringilla nulla quis libero rutrum, vel luctus nibh ullamcorper. Maecenas et ante luctus, volutpat diam nec, auctor nisi. Praesent luctus massa dui, ac faucibus sem pharetra eget. Morbi non magna libero. Mauris sit amet purus ac neque euismod elementum. Integer quis turpis et libero vehicula euismod et eu nisl.
