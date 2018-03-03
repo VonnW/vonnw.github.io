@@ -72,6 +72,10 @@ article {
 	box-shadow: #afafaf 0 1px 2px;
 }
 
+article *:last-child {
+	margin-bottom: 0;
+}
+
 footer {
 	padding: 1rem;
 	
