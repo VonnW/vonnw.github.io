@@ -199,9 +199,7 @@ pre {
 	
 	#bignav {
 		display: none;
-		
-		float: none;
-		clear: both;
+		width: 100%;
 		
 		text-align: center;
 	}
