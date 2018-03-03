@@ -11,20 +11,16 @@
 	<body>
 		<header>
 			<div class="container">
-				<h1>Vonn Wheatley</h1>
-				<nav>
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/giveMeA404PageThanksGitHub">A 404 page</a></li>
-					</ul>
-				</nav>
+				{% include header.html %}
 			</div>
 		</header>
 		<article class="container">
 			{{ content }}
 		</article>
-		<footer class="container">
-			{% include footer.html %}
+		<footer>
+			<div class="container">
+				{% include footer.html %}
+			</div>
 		</footer>
 	</body>
 </html>
