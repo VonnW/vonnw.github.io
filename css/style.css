@@ -154,3 +154,11 @@ ul, ol, li {
 	
 	list-style-position: inside;
 }
+
+blockquote {
+	border-left: solid 2px #7f7f7f;
+	
+	color: #7f7f7f;
+	
+	font-style: italic;
+}
