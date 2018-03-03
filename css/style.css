@@ -88,8 +88,8 @@ header ul, header li {
 	list-style-type: none;
 }
 
-header li:not(:last-child) {
-	margin-right: .5em;
+header li:not(:last-child)::after {
+	content: " \2022 ";
 }
 
 /* Links */
