@@ -25,7 +25,7 @@ html, body {
 /* Container */
 .container {
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 1.5rem;
 	
 	max-width: 64rem;
 }
@@ -44,7 +44,7 @@ header {
 	position: sticky;
 	top: 0;
 	
-	padding: 1.5rem;
+	/*padding: 1rem;*/
 	border-bottom: solid 2px #000000;
 	
 	width: 100%;
