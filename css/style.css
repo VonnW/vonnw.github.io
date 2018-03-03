@@ -202,6 +202,8 @@ pre {
 		
 		float: none;
 		clear: both;
+		
+		text-align: center;
 	}
 	
 	#bignav.shownav {
