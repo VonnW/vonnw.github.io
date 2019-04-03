@@ -5,7 +5,10 @@ title: Home
 ---
 ## Welcome to my site!
 
-This is my site. I hope you like it. It's a work in progress, but I think it already looks good.
+# U N D E R
+# C O N S T R U C T I O N
+
+This is my site.
 
 ## Things I like
 

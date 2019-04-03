@@ -1,3 +1,6 @@
+---
+---
+
 /* Reset styles */
 * {
 	margin: 0;
@@ -28,15 +31,15 @@ html, body {
 	padding: 1rem;
 	
 	max-width: 64rem;
-}
-
-.container::after {
-	content: "";
 	
-	display: block;
-	height: 0;
-	
-	clear: both;
+	&::after {
+		content: "";
+		
+		display: block;
+		height: 0;
+		
+		clear: both;
+	}
 }
 
 /* Header */
@@ -50,22 +53,37 @@ header {
 	background-color: #2f2f2f;
 	
 	box-shadow: #5f5f5f 0 1px 2px;
-}
-
-header div > * {
-	display: block;
 	
-	height: 2rem;
-}
-
-header h1 {
-	float: left;
+	div.container > * {
+		display: block;
+		
+		height: 2rem;
+	}
 	
-	line-height: 2rem;
-}
-
-header nav {
-	float: right;
+	h1 {
+		float: left;
+		
+		line-height: 2rem;
+	}
+	
+	nav {
+		float: right;
+	}
+	
+	/* Header navigation bar */
+	ul, li {
+		display: inline;
+		
+		margin-left: 0;
+		
+		vertical-align: middle;
+		
+		list-style-type: none;
+	}
+	
+	li:not(:last-child)::after {
+		content: " \2022  ";
+	}
 }
 
 /* Article */
@@ -75,14 +93,14 @@ article {
 	background-color: #ffffff;
 	
 	box-shadow: #afafaf 0 1px 2px;
-}
-
-article > * {
-	margin-bottom: 1rem;
-}
-
-article > *:last-child {
-	margin-bottom: .5rem;
+	
+	> * {
+		margin-bottom: 1rem;
+		
+		&:last-child {
+			margin-bottom: .5rem;
+		}
+	}
 }
 
 /* Footer */
@@ -94,52 +112,36 @@ footer {
 	text-align: center;
 }
 
-/* Header navigation bar */
-header ul, header li {
-	display: inline;
-	
-	margin-left: 0;
-	
-	vertical-align: middle;
-	
-	list-style-type: none;
-}
-
-header li:not(:last-child)::after {
-	content: " \2022  ";
-}
-
 /* Links */
 a:link {
 	color: #1f1f7f;
 	
 	text-decoration: none;
-}
-
-a:visited {
-	color: #3f1f7f;
-}
-
-a:hover {
-	color: #1f1faf;
 	
-	text-decoration: underline;
+	&:visited {
+		color: #3f1f7f;
+	}
+	
+	&:hover {
+		color: #1f1faf;
+		
+		text-decoration: underline;
+	}
 }
 
 header nav a:link {
 	color: #dfdfdf;
-}
-
-header nav a:visited {
-	color: #afafaf;
-}
-
-header nav a:hover {
-	color: #dfdfff;
+	
+	&:visited {
+		color: #afafaf;
+	}
+	
+	&:hover {
+		color: #dfdfff;
+	}
 }
 
 /* Normal formatting things */
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway", sans-serif;
 	
@@ -179,32 +181,35 @@ pre {
 	overflow-x: auto;
 }
 
+code {
+	font-family: monospace;
+}
+
 /* BigNav styles */
-#smallnav {
-	display: none;
-}
+#smallheader { display: none; }
+#smallnav { display: none; float: right; }
 
-#bignav {
-	display: initial;
-}
-
+#bigheader { display: initial; }
+#bignav { display: initial; }
 
 /* Media styles */
 @media (max-width: 32rem) {
+	#smallheader,
 	#smallnav {
 		display: initial;
-		
-		float: right;
 	}
 	
+	#bigheader { display: none; }
 	#bignav {
 		display: none;
+		
 		width: 100%;
+		height: auto;
 		
 		text-align: center;
-	}
-	
-	#bignav.shownav {
-		display: initial;
+		
+		&.shownav {
+			display: initial;
+		}
 	}
 }

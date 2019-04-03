@@ -1,19 +1,12 @@
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", ()=>{
 	clean(document.body);
 	
 	document.getElementById("switchnav").addEventListener("click", function() {
-		var bignav = document.getElementById("bignav");
-		if (/shownav/i.test(bignav.className)) {
-			bignav.className = bignav.className.replace(/\W?shownav/i, "");
-		} else {
-			bignav.className = bignav.className + " shownav";
-		}
+		document.getElementById("bignav").classList.toggle("shownav");
 	});
 });
 
 // From sitepoint.com/removing-useless-nodes-from-the-dom/
-// I just fixed their awful formatting
-// and made it not mess with syntax highlighting
 function clean(node) {
 	for (var n = 0; n < node.childNodes.length; n++) {
 		var child = node.childNodes[n];

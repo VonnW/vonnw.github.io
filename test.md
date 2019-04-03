@@ -13,14 +13,29 @@ This is a markdown file instead of an HTML file. If you look at the source code,
 2. This is list item number 2!
 3. This is list item number 3!
 
-``` javascript
-function testFunc() {
-	alert("Hey, it's syntax highlighting!");
-	return true;
+``` c#
+namespace Cool_Stuff
+{
+	class HelloWorld
+	{
+		private int times = 0;
+		
+		public HelloWorld()
+		{
+			this.times = 0;
+		}
+		
+		public string SayHello()
+		{
+			this.times++;
+			
+			return $"Hello! I've said hello {this.times}!";
+		}
+	}
 }
 ```
 
-> You should always believe everything you read on the internet.
+> You should always believe everything you read on the internet. Please.
 > 
 > &mdash; Abraham Lincoln
 
