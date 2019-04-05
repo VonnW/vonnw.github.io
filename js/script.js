@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", ()=>{
 	clean(document.body);
 	
-	document.getElementById("switchnav").addEventListener("click", function() {
+	document.getElementById("smallnav").addEventListener("click", function() {
 		document.getElementById("bignav").classList.toggle("shownav");
 	});
 });

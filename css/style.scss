@@ -113,10 +113,12 @@ footer {
 }
 
 /* Links */
-a:link {
-	color: #1f1f7f;
-	
-	text-decoration: none;
+a {
+	&:link {
+		color: #1f1f7f;
+		
+		text-decoration: none;
+	}
 	
 	&:visited {
 		color: #3f1f7f;
@@ -129,8 +131,10 @@ a:link {
 	}
 }
 
-header nav a:link {
-	color: #dfdfdf;
+header nav a {
+	&:link {
+		color: #dfdfdf;
+	}
 	
 	&:visited {
 		color: #afafaf;
@@ -183,6 +187,23 @@ pre {
 
 code {
 	font-family: monospace;
+}
+
+#smallnav {
+	border-radius: .25rem;
+	
+	width: 2rem;
+	
+	background-color: transparent;
+	background-image: url("/img/menu.png");
+	background-position: center;
+	background-size: 2rem;
+	
+	transition: background-color .5s ease-in-out;
+	
+	&:hover {
+		background-color: #4f4f4f;
+	}
 }
 
 /* BigNav styles */
