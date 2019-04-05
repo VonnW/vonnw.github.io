@@ -8,8 +8,6 @@
 	padding: 0;
 	
 	box-sizing: border-box;
-	
-	font-family: "Open Sans", sans-serif;
 }
 
 *::before, *::after {
@@ -23,6 +21,8 @@ html, body {
 	width: 100%;
 	
 	background-color: #dfdfdf;
+	
+	font-family: sans-serif;
 }
 
 /* Container */
@@ -182,11 +182,13 @@ blockquote p {
 pre {
 	padding: .5rem;
 	
-	overflow-x: auto;
-}
-
-code {
 	font-family: monospace;
+	line-height: 1.2;
+	
+	overflow-x: auto;
+	
+	tab-size: 4;
+	-moz-tab-size: 4;
 }
 
 #smallnav {

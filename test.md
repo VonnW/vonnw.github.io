@@ -29,7 +29,7 @@ namespace Cool_Stuff
 		{
 			this.times++;
 			
-			return $"Hello! I've said hello {this.times}!";
+			return $"Hello! I've said hello {this.times} many times!";
 		}
 	}
 }
