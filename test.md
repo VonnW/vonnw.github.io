@@ -13,26 +13,27 @@ This is a markdown file instead of an HTML file. If you look at the source code,
 2. This is list item number 2!
 3. This is list item number 3!
 
-``` c#
-namespace Cool_Stuff
-{
-	class HelloWorld
-	{
-		private int times = 0;
-		
-		public HelloWorld()
-		{
-			this.times = 0;
-		}
-		
-		public string SayHello()
-		{
-			this.times++;
-			
-			return $"Hello! I've said hello {this.times} many times!";
-		}
-	}
-}
+``` rust
+println!("Enter an operator.");
+
+input_buffer.clear();
+io::stdin().read_line(&mut input_buffer).expect("Can't read.");
+
+let operator = match input_buffer.trim() {
+	"+" => operator::Operator::Add,
+	"-" => operator::Operator::Sub,
+	"*" => operator::Operator::Mul,
+	"/" => operator::Operator::Div,
+	"%" => operator::Operator::Mod,
+	"^" => operator::Operator::Pow,
+	"v" => operator::Operator::Rot,
+	_ => {
+		println!("Enter a valid operator. you entered \"{}\"", input_buffer);
+		continue;
+	},
+};
+
+tokens.push(expression::Token::Operator(operator));
 ```
 
 > You should always believe everything you read on the internet. Please.
