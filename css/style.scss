@@ -90,7 +90,7 @@ header {
 article {
 	line-height: 1.6;
 	
-	background-color: #ffffff;
+	background-color: #000000;
 	
 	box-shadow: #afafaf 0 1px 2px;
 	
@@ -147,7 +147,8 @@ header nav a {
 
 /* Normal formatting things */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway", sans-serif;
+	font-family: sans-serif;
+	font-weight: 800;
 	
 	margin-bottom: 0;
 }
@@ -160,10 +161,6 @@ ul, ol, li {
 	margin-left: .5rem;
 	
 	list-style-position: inside;
-}
-
-li {
-	margin-bottom: 0;
 }
 
 blockquote {

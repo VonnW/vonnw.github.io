@@ -3,11 +3,11 @@ layout: default
 
 title: Test Page
 ---
-## What the heck
+# What the heck
 
 This is a markdown file instead of an HTML file. If you look at the source code, this file is just plain text with the occasional symbol.
 
-## Demo
+# Demo
 
 1. This is list item number 1!
 2. This is list item number 2!
