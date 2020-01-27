@@ -1,6 +1,13 @@
 ---
 ---
 
+@font-face {
+	font-family: "Iosevka SS02";
+	font-weight: 300;
+	font-style: normal;
+	src: url("img/iosevka-ss02-light.woff2") format("woff2"), url("img/iosevka-ss02-light.woff") format("woff"), url("img/iosevka-ss02-light.ttf") format("truetype");
+}
+
 /* Reset styles */
 * {
 	margin: 0;
@@ -90,7 +97,7 @@ header {
 article {
 	line-height: 1.6;
 	
-	background-color: #000000;
+	background-color: #ffffff;
 	
 	box-shadow: #afafaf 0 1px 2px;
 	
@@ -147,8 +154,8 @@ header nav a {
 
 /* Normal formatting things */
 h1, h2, h3, h4, h5, h6 {
-	font-family: sans-serif;
-	font-weight: 800;
+	font-family: "Iosevka SS02", monospace;
+	font-weight: 300;
 	
 	margin-bottom: 0;
 }
