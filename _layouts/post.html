@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include headTags.html %}
+		<title>Vonn Wheatley &ndash; {{ page.title }}</title>
+		{% if page.subtitle %}<meta name="description" content="{{ page.subtitle }}" />{% endif %}
+		{% if page.tags.size > 0 %}<meta name="keywords" content="{{ page.tags | join: "," }}" />{% endif %}
+	</head>
+	<body>
+		{% include header.html %}
+		<article class="container md">
+			<h1>{{ page.title }}</h1>
+			{% if page.subtitle %}<h3>{{ page.subtitle }}</h3>{% endif %}
+			<aside>{{ page.date | date: "%B %d, %Y" }}{% if page.update %}, updated {{ page.update | date: "%B %d, %Y" }}{% endif %}</aside>
+			{{ content }}
+			{% if page.tags.size > 0 %}<aside>Tag{% if page.tags.size > 1 %}s{% endif %}:  {{ page.tags | join: ", " }}</aside>{% endif %}
+			{% if page.comments %}
+			<h1>TODO: disqus comments</h1>
+			{% endif %}
+		</article>
+		{% include footer.html %}
+	</body>
+</html>

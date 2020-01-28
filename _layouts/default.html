@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
+		{% include headTags.html %}
 		<title>Vonn Wheatley &ndash; {{ page.title }}</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<meta name="theme-color" content="#2f2f2f" />
-		<link rel="stylesheet" type="text/css" href="/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="/css/code.css" />
-		<link rel="icon" type="image/png" href="/img/favicon.png" />
-		<script type="text/javascript" src="/js/script.js"></script>
 	</head>
 	<body>
-		<header>
-			<div class="container">
-				{% include header.html %}
-			</div>
-		</header>
+		{% include header.html %}
 		<article class="container">
 			{{ content }}
 		</article>
-		<footer>
-			<div class="container">
-				{% include footer.html %}
-			</div>
-		</footer>
+		{% include footer.html %}
 	</body>
 </html>
