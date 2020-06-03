@@ -19,4 +19,4 @@ I'll hopefully get a blog up and running soon, and I'll put a few updates and tu
 
 ## Anything else?
 
-I'm on Twitter as [@VonnWheatley](https://twitter.com/VonnWheatley), but I don't post too often. I'm also on GitHub as [@VonnW](https://github.com/VonnW)!
+I'm on Twitter as [@VonnW](https://twitter.com/VonnW) (formerly @VonnWheatley), but I don't post ~~that often~~ anything there. I'm also on GitHub as [@VonnW](https://github.com/VonnW)!
